@@ -1,0 +1,7 @@
+body{
+	counter-reset: abc;
+}
+h2::before {
+	counter-increment: abc;
+	content: ' Chapter ' counter(abc) '-';
+}
